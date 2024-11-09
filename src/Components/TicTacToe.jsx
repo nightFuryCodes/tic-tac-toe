@@ -35,8 +35,10 @@ function handleReset(){
 
     return <div>
         <Board board = {board} size = {size} handleClick = {handleClick}/>
-        <div className = "status">Status: {status}</div>
+        <div className = "status">
+            <p>Status: {status}</p>
         <button onClick = {handleReset}
         type = "reset" className = "reset-button">Reset</button>
+        </div>
     </div>
 }
