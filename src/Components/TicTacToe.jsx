@@ -30,11 +30,13 @@ function handleClick(rowIndex, colIndex){
     }
 function handleReset(){
     setBoard(initial(size))
+    setValues("")
 }
 
     return <div>
         <Board board = {board} size = {size} handleClick = {handleClick}/>
         <div className = "status">Status: {status}</div>
-        <button onClick = {handleReset}>Reset</button>
+        <button onClick = {handleReset}
+        type = "reset" className = "reset-button">Reset</button>
     </div>
 }
