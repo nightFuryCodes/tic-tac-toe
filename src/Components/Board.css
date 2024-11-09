@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap : 10px;
+}
+body{
+    display: flex;
+    justify-content:center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display:flex;
+    font-size: 40px;
+    border: 1px solid black;
+    align-items:center;
+    justify-content:center;
+}
